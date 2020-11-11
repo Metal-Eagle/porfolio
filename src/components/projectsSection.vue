@@ -4,27 +4,10 @@
     <h2 class="projects-section-header">These are some of my projects</h2>
 
     <div class="projects-grid" id="listOfProjects">
-      <!-- <div class="row">
-        <div class="card"
-
-        >
-          <div class="card-body">
-            <h5 class="card-title"></h5>
-            <p class="card-text">{{ project.description }}</p>
-            <a :href="project.website" class="card-link">klik here for more info</a>
-          </div>
-        </div>
-      </div> -->
-
       <div class="row">
         <div class="col-sm-6" v-for="project in projects" :key="project.id">
           <div class="card">
-
-
-<!-- {{project.image}}  -->
             <div v-show="project.image !== null" >
-
-
                <img :src='project.image' width="250" />
             </div>
 
@@ -58,7 +41,7 @@ export default {
           name: "Game Collector",
           website: "https://example.com/",
           description: "nog een keer blabla",
-          image: null,
+          image: '/assets/sample.png',
         },
       ],
     };
