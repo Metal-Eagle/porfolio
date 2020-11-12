@@ -1,19 +1,23 @@
 <template>
   <section id="contact" class="contact-section">
-    <div class="contact-section-header">
-      <h2>Let's work together...</h2>
-      <p>How do you take your coffee?</p>
+    <div class="row">
+      <div class="contact-section-header">
+        <div class="h1">{{ title }}</div>
+        <div class="p">{{ text }}</div>
+      </div>
     </div>
-    <div class="contact-links">
-      <a :href="githubWebsite" target="_blank" c>
-        <Github class="icon" /> GitHub
-      </a>
-    </div>
+    <div class="row">
+      <div class="contact-links">
+        <a :href="githubWebsite" target="_blank" class="alert-link">
+          <Github class="icon" /> GitHub
+        </a>
+      </div>
 
-    <div class="contact-links" >
-      <a :href="linkedInWebsite" target="_blank" c>
-        <Linkedin class="icon" /> LinkedIn
-      </a>
+      <div class="contact-links">
+        <a :href="linkedInWebsite" class="alert-link" target="_blank">
+          <Linkedin class="icon" /> LinkedIn
+        </a>
+      </div>
     </div>
   </section>
 </template>
@@ -22,15 +26,23 @@
 import { Github, Linkedin } from "mdue";
 
 export default {
-    props: {
+  props: {
     githubWebsite: {
       type: String,
-      default: 'https://github.com/'
+      default: "https://github.com/",
     },
-    linkedInWebsite:{
+    linkedInWebsite: {
       type: String,
-      default: 'https://www.linkedin.com/feed/'
-    }
+      default: "https://www.linkedin.com/feed/",
+    },
+    title: {
+      type: String,
+      default: "Let's work together...",
+    },
+    text: {
+      type: String,
+      default: "How do you take your coffee?",
+    },
   },
   components: {
     Github,

@@ -1,6 +1,6 @@
 :root {
-/* AAD8E7  #FFCA39  #4165AA  #A3C4D7*/
-  --background-color: #AAD8E7;
+  /* AAD8E7  #FFCA39  #4165AA  #A3C4D7*/
+  --background-color: #4165AA;
   --navbar-color: #4165AA;
   --letter-color: #FFCA39;
   --hover-color: #e7eff6;
@@ -15,7 +15,7 @@ html {
 
 body {
   background-color: var(--background-color);
-  color: var(--letter-color);
+  width: 100%;
 }
 
 .welcome-section {
@@ -23,8 +23,8 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%;
   height: 100vh;
+  width: 100%;
   background-color: var(--first-background-color);
   color: var(--letter-color);
 }
@@ -34,10 +34,11 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%;
   height: 100vh;
+  width: 100%;
   padding: 0 2rem;
   background: var(--second-background-color);
+  color: #000;
 }
 
 .contact-section {
@@ -45,21 +46,37 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%;
   height: 90vh;
+  width: 100%;
   padding: 0 2rem;
   background: var(--third-background-color);
+  color: #000;
+}
+
+.custom-project {
+  border: 1px var(--background-color) solid;
+  padding: 10px;
+  border-radius: 15px;
 }
 
 footer {
   padding: 2rem;
   border-top: 4px solid var(--navbar-color);
-}
-
-.icon {
   color: var(--letter-color);
 }
 
-.icon:hover {
+.navBar-icons {
+  color: var(--letter-color);
+}
+
+.navBar-icons:hover {
+  color: var(--hover-color);
+}
+
+.navBar-icons:visited {
+  color: var(--letter-color);
+}
+
+.navBar-icons:visited:hover {
   color: var(--hover-color);
 }

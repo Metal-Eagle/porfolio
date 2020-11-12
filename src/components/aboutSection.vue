@@ -2,8 +2,14 @@
   <!-- START WELCOME SECTION -->
   <section id="welcome-section" class="welcome-section">
     <!-- Add yourname -->
-    <h1>Hey I am {{ userName }}</h1> 
-     
+    <div class="row">
+      <div class="h1 col-sm">Hey I am {{ userName }}</div>
+    </div>
+    <div class="row">
+      <div class="col-sm">
+        {{ subtitle }}
+      </div>
+    </div>
   </section>
   <!-- END WELCOME SECTION -->
 </template>
@@ -13,7 +19,11 @@ export default {
   props: {
     userName: {
       type: String,
-      default: "Your Name Here"
+      default: "Your Name Here",
+    },
+    subtitle: {
+      type: String,
+      default: "Your Own text here",
     },
   },
 };

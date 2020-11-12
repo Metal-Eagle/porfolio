@@ -1,20 +1,34 @@
 <template>
   <!-- PROJECT START -->
   <section id="projects" class="projects-section">
-    <h2 class="projects-section-header">These are some of my projects</h2>
+    <div class="row pb-5">
+      <h2 class="title">These are some of my projects</h2>
+    </div>
 
-    <div class="projects-grid" id="listOfProjects">
-      <div class="row">
-        <div class="col-sm-6" v-for="project in projects" :key="project.id">
-          <div class="card">
-            <div v-show="project.image !== null" >
-               <img :src='project.image' width="250" />
+    <div class="row">
+      <div class="projects-grid" id="listOfProjects">
+        <div class="row card-deck mb-6 text-center">
+          <div class="card" v-for="project in projects" :key="project.id">
+            <h5 class="card-header">{{ project.name }}</h5>
+            <br />
+            <div
+              class="col-auto d-none d-sm-block"
+              v-show="project.image !== null"
+            >
+              <img
+                class="img-fluid custom-project"
+                :src="`/assets/${project.image}`"
+              />
             </div>
 
             <div class="card-body">
-              <h5 class="card-title">{{ project.name }}</h5>
               <p class="card-text">{{ project.description }}</p>
-              <a :href="project.website" class="card-link">Go somewhere</a>
+              <a
+                v-show="project.website"
+                :href="project.website"
+                class="card-link"
+                >Go somewhere</a
+              >
             </div>
           </div>
         </div>
@@ -26,25 +40,10 @@
 
 <script>
 export default {
-  data() {
-    return {
-      projects: [
-        {
-          id: 1,
-          name: "Phone App For Speedbooks",
-          website: "https://example.com/",
-          description: "blabla",
-          image: '/assets/sample.png' ,
-        },
-        {
-          id: 2,
-          name: "Game Collector",
-          website: "https://example.com/",
-          description: "nog een keer blabla",
-          image: '/assets/sample.png',
-        },
-      ],
-    };
+  props: {
+    projects: {
+      type: Array,
+    },
   },
 };
 </script>

@@ -1,15 +1,20 @@
 <template>
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top" id="navbar">
-    <a class="navbar-brand" href="#">Home</a>
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top" id="navbar">
+    <a class="navbar-brand" href="#">About</a>
 
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
-          <span class=" navbar-toggler-icon"></span>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarSupportedContent"
+    >
+      <span class="navbar-toggler-icon"></span>
     </button>
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item">
-          <a class="nav-link" href="#">About</a>
+          <a class="" href="#"></a>
         </li>
 
         <li class="nav-item">
@@ -19,41 +24,38 @@
         <li class="nav-item">
           <a class="nav-link" href="#contact">Contact</a>
         </li>
-
-
       </ul>
-      <div class="form-inline my-2 my-lg-0">
-        <a :href="githubWebsite" target="_blank" c>
-        <Github class="icon" />
+      <div class="form-inline">
+        <a class="navBar-icons" :href="githubWebsite" target="_blank">
+          <Github class="icon" />
         </a>
-        <a :href="linkedInWebsite" target="_blank" c>
-        <Linkedin class="icon" />
-        </a>     
+        <a class="navBar-icons" :href="linkedInWebsite" target="_blank">
+          <Linkedin class="icon" />
+        </a>
       </div>
-
     </div>
   </nav>
 </template>
 
 <script>
-import { Github,Linkedin } from 'mdue';
+import { Github, Linkedin } from "mdue";
 
 export default {
   props: {
     githubWebsite: {
       type: String,
-      default: 'https://github.com/'
+      default: "https://github.com/",
     },
-    linkedInWebsite:{
+    linkedInWebsite: {
       type: String,
-      default: 'https://www.linkedin.com/feed/'
-    }
-  },
-    components: {
-      Github,
-      Linkedin
+      default: "https://www.linkedin.com/feed/",
     },
-}
+  },
+  components: {
+    Github,
+    Linkedin,
+  },
+};
 </script>
 
 <style scoped>
