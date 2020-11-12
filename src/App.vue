@@ -57,7 +57,7 @@ export default {
         {
           id: 1,
           name: "Phone App For Speedbooks",
-          website: "",
+          website: null,
           description:
             "The telephone application is used with the Speedbooks Software, to see who is calling, in addition there is a function to send standard emails to customers",
           image: "PhoneApp.png",
@@ -65,7 +65,7 @@ export default {
         {
           id: 2,
           name: "Game Collector",
-          website: "",
+          website: null,
           description:
             "This application was created for my hobby to keep track of what is in my game collection.",
           image: "GameCollector.png",
@@ -73,7 +73,7 @@ export default {
         {
           id: 3,
           name: "Protofolio website",
-          website: "",
+          website: null,
           description:
             "the website you are on at the moment is also made by me, and yes it is a pun",
           image: "protofolio.png",
