@@ -46,8 +46,9 @@ export default {
   },
   setup() {
     const appSettings = reactive({
-      name: "YourName",
-      aboutSubtitle: "",
+      name: "Jeroen",
+      aboutSubtitle:
+        "I am a junior developer always looking for new things to learn",
       contactTitle: "Let's work together...",
       contactText: "How do you take your coffee?",
       githubWebsite: "https://github.com/Metal-Eagle",
@@ -74,7 +75,7 @@ export default {
           name: "Protofolio website",
           website: "",
           description:
-            "the website you are on at the moment is also made by me",
+            "the website you are on at the moment is also made by me, and yes it is a pun",
           image: "protofolio.png",
         },
       ],
