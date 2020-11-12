@@ -23,6 +23,7 @@
 </template>
 
 <script>
+//import reactive form vue
 import { reactive } from "vue";
 
 // import navBar
@@ -45,9 +46,8 @@ export default {
   },
   setup() {
     const appSettings = reactive({
-      name: "Jeroen",
-      aboutSubtitle:
-        "I am a junior developer always looking for new things to learn",
+      name: "YourName",
+      aboutSubtitle: "",
       contactTitle: "Let's work together...",
       contactText: "How do you take your coffee?",
       githubWebsite: "https://github.com/Metal-Eagle",
@@ -70,20 +70,12 @@ export default {
           image: "GameCollector.png",
         },
         {
-          id: 1,
-          name: "Phone App For Speedbooks",
+          id: 3,
+          name: "Protofolio website",
           website: "",
           description:
-            "The telephone application is used with the Speedbooks Software, to see who is calling, in addition there is a function to send standard emails to customers",
-          image: "PhoneApp.png",
-        },
-        {
-          id: 2,
-          name: "Game Collector",
-          website: "",
-          description:
-            "This application was created for my hobby to keep track of what is in my game collection.",
-          image: "GameCollector.png",
+            "the website you are on at the moment is also made by me",
+          image: "protofolio.png",
         },
       ],
     });
