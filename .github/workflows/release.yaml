@@ -11,5 +11,6 @@ jobs:
       uses: Metal-Eagle/github-pages-deploy-action@master
       env:
         ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+        BRANCH: main #The remove branch to push to
         BUILD_DIR: dist # The folder, the action should deploy.
         BUILD_SCRIPT: npm install && npm run-script build # The build script the action should run prior to deploying.
