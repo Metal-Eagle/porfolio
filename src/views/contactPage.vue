@@ -26,27 +26,30 @@
 import { Github, Linkedin } from "mdue";
 
 export default {
-  props: {
-    githubWebsite: {
-      type: String,
-      default: "https://github.com/",
-    },
-    linkedInWebsite: {
-      type: String,
-      default: "https://www.linkedin.com/feed/",
-    },
-    title: {
-      type: String,
-      default: "Let's work together...",
-    },
-    text: {
-      type: String,
-      default: "How do you take your coffee?",
-    },
-  },
   components: {
     Github,
     Linkedin,
+  },
+  computed: {
+    yearToDay() {
+      let date = new Date();
+      return date.getUTCFullYear();
+    },
+    githubWebsite() {
+      return this.$store.state.githubWebsite;
+    },
+    linkedInWebsite() {
+      return this.$store.state.linkedInWebsite;
+    },
+    title() {
+      return this.$store.state.contactTitle;
+    },
+    text() {
+      return this.$store.state.contactText;
+    },
+    userName() {
+      return this.$store.state.name;
+    },
   },
 };
 </script>

@@ -1,6 +1,6 @@
 <template>
   <nav class="navbar navbar-expand-md navbar-dark fixed-top" id="navbar">
-    <a class="navbar-brand" href="#">About</a>
+    <router-link class="navbar-brand" to="/">About</router-link>
 
     <button
       class="navbar-toggler"
@@ -14,15 +14,11 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item">
-          <a class="" href="#"></a>
+          <router-link class="nav-link" to="/projects">Projects</router-link>
         </li>
 
         <li class="nav-item">
-          <a class="nav-link" href="#projects">projects</a>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link" href="#contact">Contact</a>
+          <router-link class="nav-link" to="/contact">Contact</router-link>
         </li>
       </ul>
       <div class="form-inline">
@@ -41,19 +37,17 @@
 import { Github, Linkedin } from "mdue";
 
 export default {
-  props: {
-    githubWebsite: {
-      type: String,
-      default: "https://github.com/",
-    },
-    linkedInWebsite: {
-      type: String,
-      default: "https://www.linkedin.com/feed/",
-    },
-  },
   components: {
     Github,
     Linkedin,
+  },
+  computed: {
+    linkedInWebsite() {
+      return this.$store.state.linkedInWebsite;
+    },
+    githubWebsite() {
+      return this.$store.state.githubWebsite;
+    },
   },
 };
 </script>

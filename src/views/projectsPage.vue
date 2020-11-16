@@ -1,7 +1,7 @@
 <template>
   <!-- PROJECT START -->
   <section id="projects" class="projects-section">
-    <div class="row pb-5">
+    <div class="row pb-5 mt-5">
       <h2 class="title">These are some of my projects</h2>
     </div>
 
@@ -20,8 +20,9 @@
           :key="project.id"
         >
           <projectShow
+            :id="project.id"
             :name="project.name"
-            :description="project.description"
+            :description="project.smallDescription"
             :image="project.image"
             :website="project.website"
           />
@@ -33,7 +34,7 @@
 </template>
 
 <script>
-import projectShow from "../webPageProjects/projectShow";
+import projectShow from "@/components/projectShow";
 
 export default {
   data() {
@@ -41,9 +42,9 @@ export default {
       maxItemsInRows: 4,
     };
   },
-  props: {
-    projects: {
-      type: Array,
+  computed: {
+    projects() {
+      return this.$store.state.projects;
     },
   },
   components: {
