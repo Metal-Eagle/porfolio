@@ -21,7 +21,6 @@
           <router-link class="nav-link" to="/contact">Contact</router-link>
         </li>
       </ul>
-      <!-- TODO: make website links -->
       <div class="form-inline">
         <a class="navBar-icons" :href="githubWebsite" target="_blank">
           <Github class="icon" />
