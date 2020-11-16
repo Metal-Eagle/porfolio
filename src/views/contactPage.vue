@@ -20,26 +20,15 @@
       </div>
     </div>
   </section>
-  <footer>
-    <div class="row">
-      <div class="col-auto">
-        © 2020 - {{ yearToDay }} Created for {{ userName }}
-      </div>
-      <div class="col-1">
-        <Kettle class="icon" />
-      </div>
-    </div>
-  </footer>
 </template>
 
 <script>
-import { Github, Linkedin, Kettle } from "mdue";
+import { Github, Linkedin } from "mdue";
 
 export default {
   components: {
     Github,
     Linkedin,
-    Kettle,
   },
   computed: {
     yearToDay() {

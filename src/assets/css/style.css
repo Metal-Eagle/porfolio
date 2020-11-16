@@ -22,7 +22,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 90vh;
   background-color: var(--first-background-color);
   color: var(--letter-color);
 }
@@ -32,7 +32,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 90vh;
   padding: 0 2rem;
   background: var(--second-background-color);
   color: #000;
@@ -44,7 +44,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 90vh;
   padding: 0 2rem;
   background: var(--second-background-color);
   color: #000;
@@ -68,10 +68,14 @@ body {
   border-radius: 15px;
 }
 
-footer {
-  padding: 2rem;
-  border-top: 4px solid var(--navbar-color);
+#footer {
+  border-top: 1px solid var(--hover-color);
   color: var(--letter-color);
+}
+
+nav {
+  border-bottom: 1px solid var(--hover-color);
+
 }
 
 .navBar-icons {
