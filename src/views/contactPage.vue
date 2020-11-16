@@ -1,23 +1,29 @@
 <template>
-  <section id="contact" class="contact-section">
+  <section id="text-center" class="contact-section">
     <div class="row">
-      <div class="contact-section-header">
+      <div class="contact-section-header text-center">
         <div class="h1">{{ title }}</div>
         <div class="p">{{ text }}</div>
       </div>
     </div>
+    <hr />
     <div class="row">
-      <div class="contact-links">
-        <a :href="githubWebsite" target="_blank" class="alert-link">
-          <Github class="icon" /> GitHub
-        </a>
-      </div>
-
-      <div class="contact-links">
-        <a :href="linkedInWebsite" class="alert-link" target="_blank">
-          <Linkedin class="icon" /> LinkedIn
-        </a>
-      </div>
+      <a
+        :href="githubWebsite"
+        target="_blank"
+        class="alert-link external-links"
+      >
+        <Github class="icon" /> GitHub
+      </a>
+    </div>
+    <div class="row">
+      <a
+        :href="linkedInWebsite"
+        class="alert-link external-links"
+        target="_blank"
+      >
+        <Linkedin class="icon" /> LinkedIn
+      </a>
     </div>
   </section>
 </template>

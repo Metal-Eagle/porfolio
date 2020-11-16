@@ -78,6 +78,16 @@ nav {
 
 }
 
+.external-links {
+  text-decoration: none;
+  color: var(--navbar-color);
+}
+
+.external-links:hover {
+  text-decoration: none;
+  color: var(--hover-color);
+}
+
 .navBar-icons {
   color: var(--letter-color);
 }
