@@ -2,7 +2,10 @@
 <template>
   <!-- Add NavBar -->
   <navBar />
-  <router-view />
+
+  <div class="pt-5">
+    <router-view />
+  </div>
 </template>
 
 <script>

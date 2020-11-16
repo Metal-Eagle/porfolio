@@ -24,7 +24,7 @@ const routes = [{
         component: contact,
     },
     {
-        path: "/project",
+        path: "/project/:projectId",
         name: "project",
         component: project,
     }

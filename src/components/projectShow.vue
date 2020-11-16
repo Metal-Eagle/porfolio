@@ -7,7 +7,9 @@
 
   <div class="card-body">
     <p class="card-text">{{ description }}</p>
-    <a class="card-link" href="#">More info</a>
+    <router-link class="card-link" :to="`/project/${id}`"
+      >More info</router-link
+    >
     <a v-show="website" :href="website" class="card-link" target="_blank"
       >Go to project page</a
     >
@@ -17,6 +19,10 @@
 <script>
 export default {
   props: {
+    id: {
+      type: Number,
+      default: null,
+    },
     name: {
       type: String,
       default: null,
