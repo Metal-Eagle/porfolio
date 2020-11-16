@@ -73,7 +73,7 @@ export default {
         {
           id: 3,
           name: "Protofolio website",
-          website: null,
+          website: 'https://github.com/Metal-Eagle/portfolio',
           description:
             "the website you are on at the moment is also made by me, and yes it is a pun",
           image: "protofolio.png",
