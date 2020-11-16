@@ -33,7 +33,7 @@
 </template>
 
 <script>
-import projectShow from "../webPageProjects/projectShow";
+import projectShow from "@/components/projects/projectShow";
 
 export default {
   data() {
@@ -41,9 +41,9 @@ export default {
       maxItemsInRows: 4,
     };
   },
-  props: {
-    projects: {
-      type: Array,
+  computed: {
+    projects() {
+      return this.$store.state.projects;
     },
   },
   components: {

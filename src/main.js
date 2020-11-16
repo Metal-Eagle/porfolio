@@ -9,8 +9,11 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./assets/css/style.css";
 // import Vue Router
 import router from './router'
+// import states
+import vuexStore from './store/index'
 
 
 let mainApp = createApp(App)
 mainApp.use(router)
+mainApp.use(vuexStore)
 mainApp.mount('#app')
