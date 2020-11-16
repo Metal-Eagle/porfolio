@@ -7,7 +7,10 @@
 
   <div class="card-body">
     <p class="card-text">{{ description }}</p>
-    <a v-show="website" :href="website" class="card-link" target="_blank" >Go to project page</a>
+    <a class="card-link" href="#">More info</a>
+    <a v-show="website" :href="website" class="card-link" target="_blank"
+      >Go to project page</a
+    >
   </div>
 </template>
 

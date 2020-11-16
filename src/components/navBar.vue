@@ -25,20 +25,21 @@
           <a class="nav-link" href="#contact">Contact</a>
         </li>
       </ul>
-      <div class="form-inline">
+      <!-- TODO: make website links -->
+      <!-- <div class="form-inline">
         <a class="navBar-icons" :href="githubWebsite" target="_blank">
           <Github class="icon" />
         </a>
         <a class="navBar-icons" :href="linkedInWebsite" target="_blank">
           <Linkedin class="icon" />
         </a>
-      </div>
+      </div> -->
     </div>
   </nav>
 </template>
 
 <script>
-import { Github, Linkedin } from "mdue";
+// import { Github, Linkedin } from "mdue";
 
 export default {
   props: {
@@ -52,8 +53,8 @@ export default {
     },
   },
   components: {
-    Github,
-    Linkedin,
+    // Github,
+    // Linkedin,
   },
 };
 </script>
