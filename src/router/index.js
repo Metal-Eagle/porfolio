@@ -4,10 +4,9 @@ import {
 } from "vue-router";
 // import all sections
 import homePage from "@/views/homePage.vue";
-import projects from "@/views/projectsSection";
-import contact from "@/views/contactSection";
-
-import projectPage from "@/components/projects/projectPage.vue";
+import projects from "@/views/projectsPage";
+import contact from "@/views/contactPage";
+import project from "@/views/projectPage.vue";
 
 const routes = [{
         path: "/",
@@ -25,9 +24,9 @@ const routes = [{
         component: contact,
     },
     {
-        path: "/projectPage",
-        name: "projectPage",
-        component: projectPage,
+        path: "/project",
+        name: "project",
+        component: project,
     }
 ];
 

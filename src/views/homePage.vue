@@ -1,6 +1,5 @@
 <template>
   <section id="welcome-section" class="welcome-section">
-    <!-- Add yourname -->
     <div class="row">
       <div class="h1 col-sm">Hey I am {{ name }}</div>
     </div>
