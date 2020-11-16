@@ -33,7 +33,7 @@
 </template>
 
 <script>
-import projectShow from "@/components/projects/projectShow";
+import projectShow from "@/components/projectShow";
 
 export default {
   data() {
