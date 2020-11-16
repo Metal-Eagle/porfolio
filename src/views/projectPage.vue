@@ -2,7 +2,7 @@
   <div class="row project-section">
     <p class="h1">{{ getProject.name }}</p>
 
-    <div class="col-auto d-none d-sm-block" v-show="getProject.image">
+    <div class="col-auto" v-show="getProject.image">
       <img
         class="img-fluid custom-project"
         :src="`/assets/${getProject.image}`"

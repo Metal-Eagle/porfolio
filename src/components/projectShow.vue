@@ -1,7 +1,7 @@
 <template>
   <h5 class="card-header">{{ name }}</h5>
   <br />
-  <div class="col-auto d-none d-sm-block" v-show="image">
+  <div class="col-auto" v-show="image">
     <img class="img-fluid custom-project" :src="`/assets/${image}`" />
   </div>
 
