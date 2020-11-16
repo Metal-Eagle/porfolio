@@ -33,7 +33,7 @@
 </template>
 
 <script>
-import projectShow from "./projectShow";
+import projectShow from "../webPageProjects/projectShow";
 
 export default {
   data() {

@@ -30,10 +30,10 @@ import { reactive } from "vue";
 import navBar from "./components/navBar";
 
 // import all sections
-import aboutSection from "./components/aboutSection";
-import projectsSection from "./components/projectsSection";
-import contactSection from "./components/contactSection";
-import footerSection from "./components/footerSection";
+import aboutSection from "./components/webPageSections/aboutSection";
+import projectsSection from "./components/webPageSections/projectsSection";
+import contactSection from "./components/webPageSections/contactSection";
+import footerSection from "./components/webPageSections/footerSection";
 
 export default {
   name: "HomePage",
